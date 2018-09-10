@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Comparte una publicación-->
+        <scene sceneID="k4e-9E-hoD">
+            <objects>
+                <viewController storyboardIdentifier="PhotoShareViewController" id="0uf-03-9iz" customClass="PhotoShareViewController" customModule="Silaba" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mgg-eu-MCP"/>
+                        <viewControllerLayoutGuide type="bottom" id="y0M-5D-9WE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RCR-ZR-a7n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Nn-Uh-OlN">
+                                <rect key="frame" x="4" y="8" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="cK5-aU-6nD"/>
+                                    <constraint firstAttribute="width" constant="64" id="khJ-yw-0tg"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u34-Yd-ffM" userLabel="Content Text View">
+                                <rect key="frame" x="68" y="8" width="303" height="64"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" link="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="g0s-54-31l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ntE-KT-0QC">
+                                <rect key="frame" x="4" y="134" width="371" height="66"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="¿Quieres cambiar lo que Sílaba reconoció en tu foto? Escribelo aquí" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hTJ-B0-CWd">
+                                <rect key="frame" x="4" y="71" width="367" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Selecciona un talento para tu publicación: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92m-5n-ykx">
+                                <rect key="frame" x="4" y="109" width="324" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="u34-Yd-ffM" firstAttribute="top" secondItem="2Nn-Uh-OlN" secondAttribute="top" id="GoQ-UJ-NsB"/>
+                            <constraint firstAttribute="trailing" secondItem="u34-Yd-ffM" secondAttribute="trailing" constant="4" id="JA5-0i-yaE"/>
+                            <constraint firstItem="2Nn-Uh-OlN" firstAttribute="top" secondItem="Mgg-eu-MCP" secondAttribute="bottom" constant="8" id="hGx-1c-gMZ"/>
+                            <constraint firstItem="u34-Yd-ffM" firstAttribute="leading" secondItem="2Nn-Uh-OlN" secondAttribute="trailing" id="sPS-Sr-QC6"/>
+                            <constraint firstItem="2Nn-Uh-OlN" firstAttribute="leading" secondItem="RCR-ZR-a7n" secondAttribute="leading" constant="4" id="x9y-Pm-uMC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Comparte una publicación" id="PNq-Cr-Tt6">
+                        <barButtonItem key="leftBarButtonItem" title="Cancelar" id="whs-7b-2mL">
+                            <connections>
+                                <action selector="didTapCancel:" destination="0uf-03-9iz" id="cWe-MT-9hR"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Finalizar" id="3rE-D3-maN">
+                            <connections>
+                                <action selector="didTapDone:" destination="0uf-03-9iz" id="lQy-RV-QNd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="contentTextView" destination="u34-Yd-ffM" id="N1j-uv-yIC"/>
+                        <outlet property="imageView" destination="2Nn-Uh-OlN" id="tuz-cx-Jgc"/>
+                        <outlet property="talentPicker" destination="ntE-KT-0QC" id="uWs-uC-gDb"/>
+                        <outlet property="userRecognized" destination="hTJ-B0-CWd" id="VLO-Jg-JoK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gso-n5-EoD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="437.60000000000002" y="142.57871064467767"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xcr-At-fwn">
+            <objects>
+                <navigationController storyboardIdentifier="PhotoShareNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="gWf-Ld-BX2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="nfb-BQ-R0q">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.039215686274509803" green="0.039215686274509803" blue="0.039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0uf-03-9iz" kind="relationship" relationship="rootViewController" id="cAO-xt-YGK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CWl-8b-rMJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-500" y="143.47826086956522"/>
+        </scene>
+    </scenes>
+</document>

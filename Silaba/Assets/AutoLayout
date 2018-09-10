@@ -1,0 +1,17 @@
+
+Leading Edges: Alinea el lado izquierdo de ambas vistas
+Trailing Edges: Alinea el lado derecho
+Top Edges: Alinea el lado superior
+Bottom Edges: Alinea el lado inferior
+Horizontal Centers: Alinea las vistas en el eje vertical
+Vertical Centers: Alinea las vistas en el eje horizontal
+Baselines: Alinea las vistas por su línea base, es decir, si la vista contiene un texto alinea la vista para que el texto se encuentre en la misma linea. Si es una vista sin texto, equivale a alinear por el lado inferior.
+Horizontal Center in Container: Alinea una vista en el eje vertical de la vista que la contiene
+Vertical Center in Container: Alinea una vista en el eje horizontal de la vista que la contiene
+Spacing to nearest neighbor: Esta opción es una de las más importantes al trabajar con Autolayout porque nos permite definir la distancia de una vista respecto a otra vista vecina, es decir, cualquier vista que se encuentre en la misma supervista que la nuestra o la supervista en sí. Disponemos de 4 constraints: izquierda, derecha, arriba y abajo. Si pulsamos sobre la pequeñas lineas roja las activaremos.
+Width: Define el ancho de la vista
+Height: Define el alto de la vista
+Equal Widths: Iguala el ancho de las vistas seleccionadas
+Equal Heights: Iguala el alto de las vistas seleccionadas
+Aspect ratio: Obliga a mantener la relación de aspecto de una vista
+Align: Permite añadir las opciones de alineamiento vistos anteriormente

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="wWd-iZ-rW8">
+            <objects>
+                <navigationController storyboardIdentifier="VideoShareNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="599-4H-SIk" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bCA-x9-541">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="shr-nH-fUn">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="9xb-bt-kO4" kind="relationship" relationship="rootViewController" id="o6Y-xQ-b3U"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CaL-s9-QA4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-466" y="-189"/>
+        </scene>
+        <!--Comparte una publicación-->
+        <scene sceneID="Pst-Xg-ovB">
+            <objects>
+                <viewController storyboardIdentifier="VideoShareViewController" id="9xb-bt-kO4" userLabel="Comparte una publicación" customClass="VideoShareViewController" customModule="Silaba" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j0f-Ky-FAM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cxL-bu-vKl" userLabel="Video View">
+                                <rect key="frame" x="0.0" y="64" width="375" height="155"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPX-Rz-RbS">
+                                <rect key="frame" x="4" y="220" width="30" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Luy-pF-uLr"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="video24x24"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYd-eH-29T">
+                                <rect key="frame" x="42" y="220" width="30" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="NaK-DA-fqO"/>
+                                    <constraint firstAttribute="width" constant="30" id="iUu-fh-7NL"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="pause 24x24"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTl-4Q-sco">
+                                <rect key="frame" x="327" y="220" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7O6-in-pm8" userLabel="Content Text View">
+                                <rect key="frame" x="4" y="249" width="369" height="33"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" link="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="¿Quieres cambiar lo que Sílaba reconoció en tu foto? Escribelo aquí" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tGC-Xv-nUb">
+                                <rect key="frame" x="4" y="283" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona un talento para tu publicación: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jo8-kE-uL4" userLabel="Selecciona un talento para tu publicación:">
+                                <rect key="frame" x="4" y="321" width="324" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tXq-HL-dav">
+                                <rect key="frame" x="27" y="350" width="320" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="qvi-FU-zqB"/>
+                                </constraints>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uPX-Rz-RbS" firstAttribute="leading" secondItem="Jo8-kE-uL4" secondAttribute="leading" id="0Pj-b6-KzO"/>
+                            <constraint firstItem="Jo8-kE-uL4" firstAttribute="top" secondItem="tGC-Xv-nUb" secondAttribute="bottom" constant="8" id="AaP-bU-m2j"/>
+                            <constraint firstItem="g3F-6P-sDS" firstAttribute="trailing" secondItem="PTl-4Q-sco" secondAttribute="trailing" constant="2" id="Bie-iQ-sgs"/>
+                            <constraint firstItem="tGC-Xv-nUb" firstAttribute="top" secondItem="7O6-in-pm8" secondAttribute="bottom" constant="1" id="F7T-hf-YbP"/>
+                            <constraint firstItem="tGC-Xv-nUb" firstAttribute="top" secondItem="LYd-eH-29T" secondAttribute="bottom" constant="31" id="FXB-4u-mZm"/>
+                            <constraint firstItem="uPX-Rz-RbS" firstAttribute="top" secondItem="cxL-bu-vKl" secondAttribute="bottom" constant="1" id="FqL-IK-0ZO"/>
+                            <constraint firstItem="tGC-Xv-nUb" firstAttribute="top" secondItem="uPX-Rz-RbS" secondAttribute="bottom" constant="31" id="G9M-kc-BDy"/>
+                            <constraint firstItem="tXq-HL-dav" firstAttribute="top" secondItem="Jo8-kE-uL4" secondAttribute="bottom" constant="8" id="HCa-HP-9ua"/>
+                            <constraint firstItem="PTl-4Q-sco" firstAttribute="top" secondItem="cxL-bu-vKl" secondAttribute="bottom" constant="1" id="IGq-2x-4be"/>
+                            <constraint firstItem="g3F-6P-sDS" firstAttribute="bottom" secondItem="tXq-HL-dav" secondAttribute="bottom" constant="251" id="JIj-xj-VnN"/>
+                            <constraint firstItem="Jo8-kE-uL4" firstAttribute="top" secondItem="tGC-Xv-nUb" secondAttribute="bottom" constant="8" id="K2e-33-Msa"/>
+                            <constraint firstItem="cxL-bu-vKl" firstAttribute="leading" secondItem="g3F-6P-sDS" secondAttribute="leading" id="NPm-US-yRF"/>
+                            <constraint firstItem="uPX-Rz-RbS" firstAttribute="leading" secondItem="g3F-6P-sDS" secondAttribute="leading" constant="4" id="NvA-Gq-gpn"/>
+                            <constraint firstItem="cxL-bu-vKl" firstAttribute="top" secondItem="g3F-6P-sDS" secondAttribute="top" id="X1j-V5-Bum"/>
+                            <constraint firstItem="tGC-Xv-nUb" firstAttribute="top" secondItem="7O6-in-pm8" secondAttribute="bottom" constant="1" id="XTs-Pb-TPM"/>
+                            <constraint firstItem="PTl-4Q-sco" firstAttribute="trailing" secondItem="7O6-in-pm8" secondAttribute="trailing" id="XYH-3E-QQD"/>
+                            <constraint firstItem="uPX-Rz-RbS" firstAttribute="top" secondItem="cxL-bu-vKl" secondAttribute="bottom" constant="1" id="a6L-7Y-f3x"/>
+                            <constraint firstItem="PTl-4Q-sco" firstAttribute="top" secondItem="uPX-Rz-RbS" secondAttribute="top" id="cWH-Tm-Wa8"/>
+                            <constraint firstItem="LYd-eH-29T" firstAttribute="top" secondItem="uPX-Rz-RbS" secondAttribute="top" id="gV9-hY-WAs"/>
+                            <constraint firstItem="tXq-HL-dav" firstAttribute="centerX" secondItem="cxL-bu-vKl" secondAttribute="centerX" id="lBm-dc-T0R"/>
+                            <constraint firstItem="7O6-in-pm8" firstAttribute="top" secondItem="PTl-4Q-sco" secondAttribute="bottom" constant="8" id="mIA-Iz-dQB"/>
+                            <constraint firstItem="tXq-HL-dav" firstAttribute="top" secondItem="Jo8-kE-uL4" secondAttribute="bottom" constant="8" id="n0z-Nq-7Qg"/>
+                            <constraint firstItem="uPX-Rz-RbS" firstAttribute="top" secondItem="cxL-bu-vKl" secondAttribute="bottom" constant="1" id="nSR-Bx-0SY"/>
+                            <constraint firstItem="uPX-Rz-RbS" firstAttribute="leading" secondItem="7O6-in-pm8" secondAttribute="leading" id="p7f-wa-09v"/>
+                            <constraint firstItem="LYd-eH-29T" firstAttribute="leading" secondItem="uPX-Rz-RbS" secondAttribute="trailing" constant="8" symbolic="YES" id="pMP-zI-3Pm"/>
+                            <constraint firstItem="LYd-eH-29T" firstAttribute="top" secondItem="cxL-bu-vKl" secondAttribute="bottom" constant="1" id="qR6-kT-lFT"/>
+                            <constraint firstItem="7O6-in-pm8" firstAttribute="top" secondItem="PTl-4Q-sco" secondAttribute="bottom" constant="8" id="sTt-gt-YGB"/>
+                            <constraint firstItem="cxL-bu-vKl" firstAttribute="trailing" secondItem="g3F-6P-sDS" secondAttribute="trailing" id="sUB-Vl-A0A"/>
+                            <constraint firstItem="Jo8-kE-uL4" firstAttribute="top" secondItem="tGC-Xv-nUb" secondAttribute="bottom" constant="8" id="tfb-Bd-62H"/>
+                            <constraint firstItem="uPX-Rz-RbS" firstAttribute="leading" secondItem="tGC-Xv-nUb" secondAttribute="leading" id="uIE-BQ-xW0"/>
+                            <constraint firstItem="tGC-Xv-nUb" firstAttribute="top" secondItem="7O6-in-pm8" secondAttribute="bottom" constant="1" id="v0c-TE-W8u"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="g3F-6P-sDS"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Comparte una publicación" id="aeA-vR-YjN">
+                        <barButtonItem key="leftBarButtonItem" title="Cancelar" id="mgg-MG-onH">
+                            <connections>
+                                <action selector="didTapCancel:" destination="9xb-bt-kO4" id="rsL-hi-axR"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Finalizar" id="WYS-Jc-i1r">
+                            <connections>
+                                <action selector="didTapDone:" destination="9xb-bt-kO4" id="tvD-mW-FJZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="BtnPause" destination="LYd-eH-29T" id="qMw-TB-Ofd"/>
+                        <outlet property="BtnPlay" destination="uPX-Rz-RbS" id="DgS-Gb-926"/>
+                        <outlet property="contentTextView" destination="7O6-in-pm8" id="9S5-6j-rb4"/>
+                        <outlet property="imageView" destination="cxL-bu-vKl" id="mOZ-IC-EgC"/>
+                        <outlet property="lblDuration" destination="PTl-4Q-sco" id="s7C-hi-G32"/>
+                        <outlet property="talentPicker" destination="tXq-HL-dav" id="hvc-wL-HI2"/>
+                        <outlet property="userRecognized" destination="tGC-Xv-nUb" id="DVa-AT-mEG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eYn-5W-89z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationItem title="Comparte una publicación" id="oZo-xw-2CY">
+                    <barButtonItem key="leftBarButtonItem" title="Cancelar" id="H1w-kc-cFq"/>
+                    <barButtonItem key="rightBarButtonItem" title="Finalizar" id="5yn-Gm-bUB"/>
+                </navigationItem>
+            </objects>
+            <point key="canvasLocation" x="440.80000000000001" y="-183.05847076461771"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pause 24x24" width="24" height="24"/>
+        <image name="video24x24" width="256" height="256"/>
+    </resources>
+</document>

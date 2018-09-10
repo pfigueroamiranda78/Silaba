@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14112" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--NewsFeedModuleRoot-->
+        <scene sceneID="tGS-ZE-5Ev">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NewsFeedModuleStoryboard" referencedIdentifier="NewsFeedModuleRoot" id="Aca-U4-N0C" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Zgj-fP-6cB"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z9w-9B-btd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6" y="-215"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="IIQ-6b-FQm">
+            <objects>
+                <viewController id="VjO-eJ-Adb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eEN-x3-2qw"/>
+                        <viewControllerLayoutGuide type="bottom" id="mpH-Ay-RJN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ECu-dt-QmY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="plus_home_icon" selectedImage="plus_home_icon" id="Pzt-Aa-oZB">
+                        <inset key="imageInsets" minX="0.0" minY="8" maxX="0.0" maxY="-8"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kiZ-Gx-hJb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="706" y="92"/>
+        </scene>
+        <!--View Controller Discovery-->
+        <scene sceneID="3JL-O3-scu">
+            <objects>
+                <viewController id="DkK-0g-eoX" userLabel="View Controller Discovery" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xIF-Hq-JoB"/>
+                        <viewControllerLayoutGuide type="bottom" id="GM6-HC-vdZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bnz-Lx-oI3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="discovery_line_icon" selectedImage="discovery_line_icon" id="4Re-AR-4Mp">
+                        <inset key="imageInsets" minX="0.0" minY="8" maxX="0.0" maxY="-8"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UiS-Mr-MqU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="191" y="832"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="Rbu-cy-Rhq">
+            <objects>
+                <tabBarController storyboardIdentifier="HomeViewController" id="X7g-Bw-5LY" customClass="HomeViewController" customModule="Silaba" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" clipsSubviews="YES" contentMode="scaleToFill" translucent="NO" itemPositioning="fill" id="b1W-Yv-rTt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="1" green="0.4321257503" blue="0.76767538589999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Aca-U4-N0C" kind="relationship" relationship="viewControllers" id="pZ9-Vj-C6R"/>
+                        <segue destination="VjO-eJ-Adb" kind="relationship" relationship="viewControllers" id="QzJ-e8-qQE"/>
+                        <segue destination="DkK-0g-eoX" kind="relationship" relationship="viewControllers" id="qR5-DK-niN"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aXn-Wy-Ri4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-553" y="116"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="discovery_line_icon" width="21" height="21"/>
+        <image name="plus_home_icon" width="24" height="24"/>
+    </resources>
+</document>

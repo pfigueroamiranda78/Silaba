@@ -1,0 +1,168 @@
+
+/* Class = "UINavigationItem"; title = "Comenta"; ObjectID = "1ta-J6-t3A"; */
+"1ta-J6-t3A.title" = "Comenta";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "2ZD-ug-CjY"; */
+"2ZD-ug-CjY.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "3Cg-L4-y4U"; */
+"3Cg-L4-y4U.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "4Zc-Cp-Zmg"; */
+"4Zc-Cp-Zmg.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Compatir"; ObjectID = "6Px-ux-hSK"; */
+"6Px-ux-hSK.normalTitle" = "Compatir";
+
+/* Class = "UIButton"; normalTitle = "Fotografiar un lugar"; ObjectID = "8vs-Mx-QbU"; */
+"8vs-Mx-QbU.normalTitle" = "Fotografiar un lugar";
+
+/* Class = "UIButton"; normalTitle = "Ver videos"; ObjectID = "9aH-Hz-yWk"; */
+"9aH-Hz-yWk.normalTitle" = "Ver videos";
+
+/* Class = "UIViewController"; title = "Feed"; ObjectID = "BYZ-38-t0r"; */
+"BYZ-38-t0r.title" = "Feed";
+
+/* Class = "UIButton"; normalTitle = "Comentarios"; ObjectID = "Beq-dv-Mq4"; */
+"Beq-dv-Mq4.normalTitle" = "Comentarios";
+
+/* Class = "UINavigationItem"; title = "Buscar amigo"; ObjectID = "CaO-EA-wCx"; */
+"CaO-EA-wCx.title" = "Buscar amigo";
+
+/* Class = "UIButton"; normalTitle = "Crea una experiencia"; ObjectID = "DZY-xa-QMY"; */
+"DZY-xa-QMY.normalTitle" = "Crea una experiencia";
+
+/* Class = "UINavigationItem"; title = "Inicio"; ObjectID = "ET4-kN-T9t"; */
+"ET4-kN-T9t.title" = "Inicio";
+
+/* Class = "UINavigationItem"; title = "Publicaciones"; ObjectID = "Fn7-7t-XAv"; */
+"Fn7-7t-XAv.title" = "Publicaciones";
+
+/* Class = "UIButton"; normalTitle = "Comparte algo"; ObjectID = "Hfy-76-qAL"; */
+"Hfy-76-qAL.normalTitle" = "Comparte algo";
+
+/* Class = "UIBarButtonItem"; title = "Compartir"; ObjectID = "Hqu-Ud-2gf"; */
+"Hqu-Ud-2gf.title" = "Compartir";
+
+/* Class = "UINavigationItem"; title = "Demuestra tus talentos"; ObjectID = "JCh-Qs-7Ei"; */
+"JCh-Qs-7Ei.title" = "Demuestra tus talentos";
+
+/* Class = "UIButton"; normalTitle = "Buscar"; ObjectID = "JID-rM-Wmb"; */
+"JID-rM-Wmb.normalTitle" = "Buscar";
+
+/* Class = "UIButton"; normalTitle = "Publicaciones"; ObjectID = "JLL-33-SOg"; */
+"JLL-33-SOg.normalTitle" = "Publicaciones";
+
+/* Class = "UIButton"; normalTitle = "Busca amigos"; ObjectID = "K30-Wn-ai8"; */
+"K30-Wn-ai8.normalTitle" = "Busca amigos";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Kzj-Mh-VE9"; */
+"Kzj-Mh-VE9.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Entrar / Registrarse"; ObjectID = "L0R-9q-9Hr"; */
+"L0R-9q-9Hr.normalTitle" = "Entrar / Registrarse";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "LEG-hp-G5z"; */
+"LEG-hp-G5z.placeholder" = "Email";
+
+/* Class = "UIButton"; normalTitle = "Compatir"; ObjectID = "Lg4-E8-fp9"; */
+"Lg4-E8-fp9.normalTitle" = "Compatir";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Lgc-eE-PYy"; */
+"Lgc-eE-PYy.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Experiencias similares"; ObjectID = "NAA-UO-rme"; */
+"NAA-UO-rme.normalTitle" = "Experiencias similares";
+
+/* Class = "UIButton"; normalTitle = "Comenta"; ObjectID = "NRm-h7-ZbT"; */
+"NRm-h7-ZbT.normalTitle" = "Comenta";
+
+/* Class = "UINavigationItem"; title = "Publica"; ObjectID = "Q2H-jb-JIe"; */
+"Q2H-jb-JIe.title" = "Publica";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "QUG-Gr-bG6"; */
+"QUG-Gr-bG6.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Vnp-ln-irb"; */
+"Vnp-ln-irb.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Fotografiar algo"; ObjectID = "W0w-Jr-kRV"; */
+"W0w-Jr-kRV.normalTitle" = "Fotografiar algo";
+
+/* Class = "UIButton"; normalTitle = "Compatir"; ObjectID = "Ykz-d6-nSz"; */
+"Ykz-d6-nSz.normalTitle" = "Compatir";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "aO1-PT-aZs"; */
+"aO1-PT-aZs.text" = "Subtitle";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "akL-O5-bjZ"; */
+"akL-O5-bjZ.text" = "Title";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "bin-PM-Cxf"; */
+"bin-PM-Cxf.text" = "Label";
+
+/* Class = "UILabel"; text = "Similar a:"; ObjectID = "cq2-aN-oYv"; */
+"cq2-aN-oYv.text" = "Similar a:";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "dOU-0e-Ves"; */
+"dOU-0e-Ves.text" = "Subtitle";
+
+/* Class = "UINavigationItem"; title = "Experiencias similares"; ObjectID = "eMM-0O-0l8"; */
+"eMM-0O-0l8.title" = "Experiencias similares";
+
+/* Class = "UIButton"; normalTitle = "Fotografia herramienta"; ObjectID = "f0h-ZX-zEV"; */
+"f0h-ZX-zEV.normalTitle" = "Fotografia herramienta";
+
+/* Class = "UIBarButtonItem"; title = "Compartir"; ObjectID = "iNh-e0-umz"; */
+"iNh-e0-umz.title" = "Compartir";
+
+/* Class = "UIViewController"; title = "toCreateExperience"; ObjectID = "iUY-IM-3OX"; */
+"iUY-IM-3OX.title" = "toCreateExperience";
+
+/* Class = "UITextField"; placeholder = "Contraseña"; ObjectID = "ird-i8-rmr"; */
+"ird-i8-rmr.placeholder" = "Contraseña";
+
+/* Class = "UITextView"; text = "En Sílaba puedes demostrar tus talentos, propon experiencia para que tus seguidores la puedan realizar, fotografiando plantas, lugares, cosas y herramientas. Ellos podrán describir su experiencia y demostrar su talento."; ObjectID = "kjQ-dD-9Bd"; */
+"kjQ-dD-9Bd.text" = "En Sílaba puedes demostrar tus talentos, propon experiencia para que tus seguidores la puedan realizar, fotografiando plantas, lugares, cosas y herramientas. Ellos podrán describir su experiencia y demostrar su talento.";
+
+/* Class = "UIButton"; normalTitle = "Ver videos"; ObjectID = "km3-g1-ozE"; */
+"km3-g1-ozE.normalTitle" = "Ver videos";
+
+/* Class = "UIButton"; normalTitle = "Fotografiar planta"; ObjectID = "lZf-Tq-Fp3"; */
+"lZf-Tq-Fp3.normalTitle" = "Fotografiar planta";
+
+/* Class = "UIButton"; normalTitle = "Seguir"; ObjectID = "nn1-U2-hJm"; */
+"nn1-U2-hJm.normalTitle" = "Seguir";
+
+/* Class = "UILabel"; text = "username"; ObjectID = "pEY-G0-hne"; */
+"pEY-G0-hne.text" = "username";
+
+/* Class = "UITextField"; placeholder = "Escribe email"; ObjectID = "pjq-ak-hgi"; */
+"pjq-ak-hgi.placeholder" = "Escribe email";
+
+/* Class = "UIButton"; normalTitle = "Selecciona una imagen"; ObjectID = "poJ-fb-EHc"; */
+"poJ-fb-EHc.normalTitle" = "Selecciona una imagen";
+
+/* Class = "UIButton"; normalTitle = "Seguir..."; ObjectID = "raj-M7-fSU"; */
+"raj-M7-fSU.normalTitle" = "Seguir...";
+
+/* Class = "UILabel"; text = "Toca en Sílaba para empezar ..."; ObjectID = "rec-3o-JHP"; */
+"rec-3o-JHP.text" = "Toca en Sílaba para empezar ...";
+
+/* Class = "UIButton"; normalTitle = "Publicaciones"; ObjectID = "uI1-ck-dzW"; */
+"uI1-ck-dzW.normalTitle" = "Publicaciones";
+
+/* Class = "UINavigationItem"; title = "Comentarios"; ObjectID = "ujt-te-xEb"; */
+"ujt-te-xEb.title" = "Comentarios";
+
+/* Class = "UIBarButtonItem"; title = "Comentar"; ObjectID = "us0-Ti-fUw"; */
+"us0-Ti-fUw.title" = "Comentar";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "vCr-LK-8LM"; */
+"vCr-LK-8LM.text" = "Title";
+
+/* Class = "UITextField"; placeholder = "Usuario"; ObjectID = "vQi-y6-XHj"; */
+"vQi-y6-XHj.placeholder" = "Usuario";
+
+/* Class = "UINavigationItem"; title = "Crea una experiencia"; ObjectID = "zv9-yt-ghK"; */
+"zv9-yt-ghK.title" = "Crea una experiencia";
